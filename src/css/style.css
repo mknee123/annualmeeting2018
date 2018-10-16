@@ -40,24 +40,25 @@ header h1 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin:.5rem 0;
+  margin:.25rem 0;
 }
 .box {
   flex:1;
   color:white;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
   min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .welcome {
-  background: #5d8996;
-
+  background: #69939f;
 }
 .growing {
-  background: #fec93f;
-
+  background: #f9ca3e;
 }
 .improving {
-  background: #e06a3c;
+  background: #cf381d;
 }
 
 footer {
@@ -67,7 +68,8 @@ footer {
 .footer-logo {
   max-width: 200px;
   width:100%;
-  margin: 0 auto;;
+  margin: 0 auto;
+  padding: 1rem 0 0;
 }
 
 footer a {
