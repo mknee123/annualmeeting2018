@@ -27,7 +27,7 @@ gulp.task('browser-sync', function() {
 gulp.task('css', function() {
   gulp.src([
     'node_modules/bootstrap/dist/css/bootstrap.css',
-    'src/css/style/css'
+    'src/css/style.css'
   ])
   .pipe(minifyCSS())
   .pipe(concat('style.css'))
@@ -39,7 +39,7 @@ gulp.task('css-reset', function() {
   ])
   .pipe(minifyCSS())
   .pipe(concat('reset.css'))
-  .pipe(gulp.dest('web/dest/css'));
+  .pipe(gulp.dest('web/dist/css'));
 });
 
 /**
@@ -73,7 +73,7 @@ gulp.task('css-reset', function() {
   * The default gulp task
   */
  gulp.task('default', function() {
-     gulp.run('js', 'css', 'images');
+     gulp.run('js', 'css', 'css-reset', 'images');
  });
 
  /**
