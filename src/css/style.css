@@ -5,3 +5,57 @@ html {
 body {
   background-color: red !important;
 }
+
+header {
+  background: #ff9000;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header p {
+  letter-spacing: 1.1;
+}
+header h1 {
+  font-size:2.5rem;
+  font-weight: bold;
+}
+ span.rotated {
+  transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* Flex Box Styles for Homepage */
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  flex:1;
+  color:white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  min-height: 250px;
+}
+.welcome {
+  background: #5d8996;
+
+}
+.growing {
+  background: #fec93f;
+
+}
+.improving {
+  background: #e06a3c;
+
+}
