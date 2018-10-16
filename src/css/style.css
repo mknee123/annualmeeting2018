@@ -5,12 +5,20 @@ html {
 body {
 
 }
-
+/*** COMMON STYLES ***/
+.thin-margin-top { margin-top: 1rem;}
+.margin-top { margin-top: 3rem;}
+.medium-margin-top { margin-top: 5rem;}
+.thin-margin-bottom { margin-bottom: 1rem;}
+.margin-bottom { margin-bottom: 3rem;}
+.medium-margin-bottom { margin-bottom: 5rem;}
+.text-upper { text-transform: uppercase;}
+.text-center { text-align: center;}
 header {
   background: #ff9000;
   color: white;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 0 0;
 }
 
 header p {
@@ -59,6 +67,26 @@ header h1 {
 }
 .improving {
   background: #cf381d;
+}
+/** SUB PAGES NAV */
+.flex-wrapper-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:.5rem;
+}
+.nav-box{
+  flex:1;
+  color:white;
+  padding: .5rem 0;
+}
+
+/**feature image area **/
+.feat-img {
+  background: orange;
+  width: 100%;
+  height: 320px;
 }
 
 footer {
