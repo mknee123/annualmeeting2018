@@ -6,10 +6,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Allegheny Conference on Community Development Annual Meeting 2018 ">
     <meta name="author" content="Miranda Knee, Web Developer for the Allegheny Conference">
-    <title>Annual Meeting 2018</title>
+    <title>Growing the Economy - Annual Meeting 2018</title>
     <!--css reset -->
     <link rel="stylesheet" type="text/css" href="dist/css/reset.css" />
-    <!--Fonts-->
+    <!--Fonts -->
      <!--Typekit font for Aktiv Grotesk -->
      <link rel="stylesheet" href="https://use.typekit.net/zbl4htd.css">
      <!-- Typekit font for Proxima Nova -->
@@ -44,41 +44,60 @@
           <h1>Annual</h1> <span class="rotated">2018</span> <h1>Meeting</h1>
         </a>
       <!--navigation -->
-      <nav>
-
+      <nav class="flex-wrapper-nav">
+        <a class="nav-box welcome" href="welcome.html">
+          Welcome
+        </a>
+        <a class="nav-box growing" href="#">
+          Growing the Economy
+        </a>
+        <a class="nav-box improving" href="#">
+          Improving Competitiveness
+        </a>
       </nav>
-
     </header>
-    <!--three box container -->
-    <div class="flex-wrapper">
-      <!--welcome -->
-      <a class="box welcome" href="welcome.html">
-        <div class="box-graphic">
-          <img src="dist/img/welcome_block_bg.jpg" alt="welcome block graphic" />
-        </div>
-        <div class="box-text">
-          <h3>Welcome</h3>
-        </div>
-      </a>
-      <!-- Growing the Economy -->
-      <a class="box growing" href="growing-economy.html">
-        <div class="box-graphic">
-          <img src="dist/img/growing_block_bg.jpg" alt="growing the economy block graphic" />
-        </div>
-        <div class="box-text">
-          <h3>Growing the Economy</h3>
-        </div>
-      </a>
-      <!-- improving competition -->
-      <a class="box improving" href="#">
-        <div class="box-graphic">
-          <img src="dist/img/improving_block_bg.jpg" alt="improving competitiveness block graphic" />
-        </div>
-        <div class="box-text">
-          <h3>Improving Competitiveness</h3>
-        </div>
-      </a>
+    <!--feature image graphic -->
+    <div class="feat-img">
+      <img src="dist/img/growingEconomyBanner.jpg" alt="Growing the Economy Feature Banner Image" />
     </div>
+    <main>
+      <div class="margin-top text-center entry-content">
+        <h1 class="text-upper thin-margin-bottom">Growing the Economy</h1>
+
+        <p>Test test test Test test test  Test test test Test test test Test test test Test test test Test test test Test test test Test test test </p>
+      </div><!--close of entry-content-->
+      <!-- icons of innovation Economy and Energy & Petrochemical Manufacturing -->
+      <div class="flex-wrapper-icons medium-margin-top medium-margin-bottom">
+        <div class="icon">
+          <a href="#innovation-economy"><img src="dist/img/Icon_InnovationEconomy.svg" alt="icon for Innovation Economy" />Innovation Economy</a>
+        </div>
+        <div class="icon">
+          <a href="#energy-petro-manu"><img src="dist/img/Icon_EnergyPetroManu.svg" alt="icon for Energy & Petrochemical Manufacturing" />Energy & Petrochemical<br/> Manufacturing</a>
+        </div>
+      </div><!--close of flex-wrapper-->
+      <!--graphic divider-->
+      <img class="colored-divider" src="dist/img/coloredDivider.jpg" alt="graphic divider" />
+      <!-- Innovation Economy -->
+      <span id="innovation-economy"></span>
+      <h2 class="medium-margin-top margin-bottom text-center">Innovation Economy</h2>
+      <div class="medium-margin-bottom">
+        <div class="flex-wrapper-content-reverse">
+          <p>Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. </p>
+          <img class="circle-graphic margin-left" src="dist/img/ieGraphic.png" alt="graphic for innovation economy" />
+        </div>
+      </div>
+      <hr>
+      <!--Energy & Petrochemical Manufacturing -->
+      <span id="energy-petro-manu"></span>
+      <h2 class="medium-margin-top margin-bottom text-center">Energy & Petrochemical Manufacturing</h2>
+      <div class="medium-margin-bottom">
+        <div class="flex-wrapper-content">
+          <img class="circle-graphic margin-right" src="dist/img/epmGraphic.png" alt="graphic for Energy & Petrochemical Manufacturing" />
+          <p>Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. </p>
+        </div>
+      </div>
+    </main>
+
     <!--footer-->
     <footer>
       <!--footer logo in white -->

@@ -22,9 +22,16 @@ img {
   display: block;
   width: 100%;
 }
-.circle-graphic {
-  max-width:325px;
-  width:100%;
+
+.icon {
+  text-align: center;
+  align-self: flex-start;
+
+}
+.icon img {
+  max-width: 125px;
+  width: 100%;
+  margin:0 auto;
 }
 /** TEXT STYLES **/
 
@@ -141,9 +148,46 @@ header h1 {
 
 /**feature image area **/
 .feat-img {
-  background: orange;
+  /*background: orange;
   width: 100%;
-  height: 320px;
+  height: 320px;*/
+  display: none;
+}
+/** CONTENT AREA **/
+main {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.flex-wrapper-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.colored-divider {
+  max-width: 130px;
+  width: 100%;
+  margin: 0 auto;
+}
+.flex-wrapper-content-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 0 1rem;
+
+}
+.flex-wrapper-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.circle-graphic {
+  max-width:225px;
+  min-width: 150px;
+  width: 100%;
 }
 
 footer {
@@ -179,20 +223,6 @@ footer a {
   h3 {
     font-size: 1.25rem;
   }
-  /* Flex Box Styles for Homepage */
-  .flex-wrapper {
-    flex-direction: row;
-  }
-  footer a {
-    padding: 1rem;
-  }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  h3 {
-    font-size: 1.35rem;
-  }
-  /** SUB PAGES NAV */
   .flex-wrapper-nav {
     flex-wrap: wrap;
     flex-direction: row;
@@ -204,6 +234,40 @@ footer a {
     color:white;
     padding: .5rem 0;
   }
+  .feat-img {
+    display: block;
+  }
+  
+  /* Flex Box Styles for Homepage */
+  .flex-wrapper {
+    flex-direction: row;
+  }
+  .flex-wrapper-content-reverse {
+    flex-direction: row;
+    margin: 0;
+
+  }
+  .flex-wrapper-content {
+    flex-direction: row;
+    margin: 0;
+  }
+  .margin-right {
+    margin-right:2rem;
+  }
+  .margin-left {
+    margin-left: 2rem;
+  }
+  footer a {
+    padding: 1rem;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.35rem;
+  }
+  /** SUB PAGES NAV */
+
 
 }
 /* Large devices (laptops/desktops, 992px and up) */
