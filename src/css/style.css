@@ -14,6 +14,8 @@ body {
 .medium-margin-bottom { margin-bottom: 5rem;}
 .text-upper { text-transform: uppercase;}
 .text-center { text-align: center;}
+
+
 header {
   background: #ff9000;
   color: white;
@@ -22,11 +24,27 @@ header {
 }
 
 header p {
-  letter-spacing: 1.1;
+  letter-spacing: 1px;
+  font-family: aktiv-grotesk-thin, sans-serif;
+  font-weight: 275;
+  font-style: normal;
+  font-size:.8rem;
+  margin-bottom: .25rem;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+header a:hover {
+  text-decoration: none;
+  color: white;
 }
 header h1 {
-  font-size:2.5rem;
-  font-weight: bold;
+  letter-spacing: 1px;
+  font-size:3rem;
+  font-family: aktiv-grotesk-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
  span.rotated {
   transform: rotate(-90deg);
@@ -40,11 +58,15 @@ header h1 {
   -o-transform: rotate(-90deg);
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  font-size: 1rem;
+  margin: -8px -5px 0;
+  font-weight: 500;
 }
 
 /* Flex Box Styles for Homepage */
 .flex-wrapper {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -71,8 +93,8 @@ header h1 {
 /** SUB PAGES NAV */
 .flex-wrapper-nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content:center;
   align-items: center;
   margin-bottom:.5rem;
 }
@@ -80,6 +102,7 @@ header h1 {
   flex:1;
   color:white;
   padding: .5rem 0;
+  align-self: stretch;
 }
 
 /**feature image area **/
@@ -105,3 +128,60 @@ footer a {
   text-decoration: none;
   padding: 1rem;
 }
+
+/**MEDIA QUERIES **/
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  header p {
+    letter-spacing: 1.3px;
+    font-size:1rem;
+    margin-bottom:1rem;
+  }
+  header h1 {
+    letter-spacing: 1px;
+    font-size:4rem;
+    font-weight: 700;
+  }
+   span.rotated {
+    font-size: 1.45rem;
+    margin: -8px -10px 0;
+    font-weight: 500;
+  }
+
+  /* Flex Box Styles for Homepage */
+  .flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .box {
+    min-height: 250px;
+  }
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /** SUB PAGES NAV */
+  .flex-wrapper-nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:.5rem;
+  }
+  .nav-box{
+    flex:1;
+    color:white;
+    padding: .5rem 0;
+  }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
