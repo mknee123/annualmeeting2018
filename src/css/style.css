@@ -23,16 +23,7 @@ img {
   width: 100%;
 }
 
-.icon {
-  text-align: center;
-  align-self: flex-start;
 
-}
-.icon img {
-  max-width: 125px;
-  width: 100%;
-  margin:0 auto;
-}
 /** TEXT STYLES **/
 
 h3 {
@@ -137,7 +128,8 @@ header h1 {
   flex-direction: column;
   justify-content:center;
   align-items: center;
-  margin-bottom:.5rem;
+  border-top:white solid 2px;
+  border-bottom:white solid 2px;
 }
 .nav-box{
   flex:1;
@@ -145,6 +137,7 @@ header h1 {
   padding: .5rem 0;
   align-self: stretch;
 }
+
 
 /**feature image area **/
 .feat-img {
@@ -159,11 +152,28 @@ main {
   width: 100%;
   margin: 0 auto;
 }
+.entry-content {
+  margin:0 1rem;
+}
 .flex-wrapper-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
+}
+.icon {
+  text-align: center;
+  align-self: flex-start;
+  width: 150px;
+  margin-bottom: 1rem;
+}
+.icon a {
+  color:black;
+}
+.icon img {
+  max-width: 125px;
+  width: 100%;
+  margin:0 auto;
 }
 .colored-divider {
   max-width: 130px;
@@ -227,7 +237,6 @@ footer a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom:.5rem;
   }
   .nav-box{
     flex:1;
@@ -237,7 +246,9 @@ footer a {
   .feat-img {
     display: block;
   }
-  
+  .entry-content {
+    margin:0;
+  }
   /* Flex Box Styles for Homepage */
   .flex-wrapper {
     flex-direction: row;
