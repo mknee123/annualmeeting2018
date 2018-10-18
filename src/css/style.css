@@ -18,6 +18,9 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+p {
+  text-align: justify;
+}
 img {
   display: block;
   width: 100%;
@@ -46,6 +49,7 @@ header p {
   font-style: normal;
   font-size:.8rem;
   margin-bottom: .25rem;
+  text-align: center;
 }
 .flex-wrapper-header {
   display: flex;
@@ -136,6 +140,16 @@ header h1 {
   color:white;
   padding: .5rem 0;
   align-self: stretch;
+
+}
+.nav-item {
+  position: relative;
+}
+.nav-text:hover::before {
+  content:'\27A4';
+  position: absolute;
+  width: 0;
+  left: -15px;
 }
 
 
@@ -154,6 +168,7 @@ main {
 }
 .entry-content {
   margin:0 1rem;
+  text-align: center;
 }
 .flex-wrapper-icons {
   display: flex;
@@ -198,6 +213,7 @@ main {
   max-width:225px;
   min-width: 150px;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 footer {
@@ -224,6 +240,9 @@ footer a {
   color:white;
   text-decoration: none;
   padding: 0rem;
+}
+footer a:hover {
+  color:white;
 }
 
 /**MEDIA QUERIES **/
@@ -262,11 +281,14 @@ footer a {
     flex-direction: row;
     margin: 0;
   }
+  .circle-graphic {
+    margin-bottom: 0;
+  }
   .margin-right {
-    margin-right:2rem;
+    margin-right:3rem;
   }
   .margin-left {
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
   footer a {
     padding: 1rem;
