@@ -21,6 +21,12 @@ body {
 p {
   text-align: justify;
 }
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
 img {
   display: block;
   width: 100%;
