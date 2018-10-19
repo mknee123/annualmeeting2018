@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" type="text/css" href="dist/css/style.css" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!--favicon-->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -55,7 +57,39 @@
           <span class="nav-item"><span class="nav-text">Improving Competitiveness</span></span>
         </a>
       </nav>
+
     </header>
+    <!--navigation 2-->
+    <nav class="wrapper-nav text-center">
+      <ul class="nav-two">
+        <li class="welcome">
+          <a href="welcome.html">
+            <span class="nav-item"><span class="nav-text">Welcome</span></span>
+          </a>
+        </li>
+        <li class="growing">
+          <a class="test" href="#">
+            <span class="nav-item"><span class="nav-text">Growing the Economy</span></span></a>
+            <span class="caret">+</span>
+            <ul class="sub-nav">
+              <li> <span class="nav-item"><span class="nav-text">One</span></span></li>
+              <li><span class="nav-item"><span class="nav-text">Two</span></span></li>
+            </ul>
+
+        </li>
+        <li class="improving">
+          <a href="improving-competitiveness.html">
+            <span class="nav-item"><span class="nav-text">Improving Competitiveness</span></span>
+          </a>
+          <span class="caret"></span>
+          <ul class="sub-nav">
+            <li> <span class="nav-item"><span class="nav-text">three</span></span></li>
+            <li><span class="nav-item"><span class="nav-text">four</span></span></li>
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
     <!--feature image graphic -->
     <div class="feat-img">
       <img src="dist/img/growingEconomyBanner.jpg" alt="Growing the Economy Feature Banner Image" />
@@ -64,38 +98,57 @@
       <div class="margin-top text-center">
         <h1 class="text-upper thin-margin-bottom">Growing the Economy</h1>
 
-        <p class="entry-content">Test test test Test test test  Test test test Test test test Test test test Test test test Test test test Test test test Test test test. Test test test Test test test  Test test test Test test test Test test test Test test test Test test test Test test test Test test test. Test test test Test test test  Test test test Test test test Test test test Test test test Test test test Test test test Test test test </p>
+        <p class="entry-content">We’re focusing economic development strategies to grow our economy through business attraction and retention across five strategic sectors, including a focus on <strong>innovation</strong> and <strong>energy-related manufacturing</strong>.</p>
+        <p><em><strong>In 2018, this strategy was chaired by Laura Karet, Vice Chair of the Allegheny Conference and CEO, Giant Eagle, Inc.</strong></em></p>
       </div><!--close of entry-content-->
       <!-- icons of innovation Economy and Energy & Petrochemical Manufacturing -->
       <div class="flex-wrapper-icons medium-margin-top medium-margin-bottom">
         <div class="icon">
-          <a href="#innovation-economy"><img src="dist/img/Icon_InnovationEconomy.svg" alt="icon for Innovation Economy" />Innovation Economy</a>
+          <a href="#innovation-economy"><img src="dist/img/Icon_InnovationEconomy.svg" alt="icon for Innovation Economy" />Innovation Economic<br/> Development</a>
         </div>
         <div class="icon">
-          <a href="#energy-petro-manu"><img src="dist/img/Icon_EnergyPetroManu.svg" alt="icon for Energy & Petrochemical Manufacturing" />Energy & Petrochemical<br/> Manufacturing</a>
+          <a href="#energy-petro-manu"><img src="dist/img/Icon_EnergyPetroManu.svg" alt="icon for Energy & Petrochemical Manufacturing" />The Amazon HQ2<br/> Ripple Effect</a>
+        </div>
+        <div class="icon">
+          <a href="#energy-petro-manu"><img src="dist/img/Icon_EnergyPetroManu.svg" alt="icon for Energy & Petrochemical Manufacturing" />Energy-Related<br/> Manufacturing</a>
         </div>
       </div><!--close of flex-wrapper-->
       <!--graphic divider-->
       <img class="colored-divider" src="dist/img/coloredDivider.jpg" alt="graphic divider" />
       <!-- Innovation Economy -->
       <span id="innovation-economy"></span>
-      <h2 class="medium-margin-top margin-bottom text-center">Innovation Economy</h2>
+      <h2 class="medium-margin-top margin-bottom text-center">Innovation Economic Development</h2>
       <div class="medium-margin-bottom">
         <div class="flex-wrapper-content-reverse">
-          <p>Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. </p>
+          <p>The Pittsburgh Regional Alliance – the Allegheny Conference’s economic development marketing affiliate – attracted a signature innovation-related project to the region.  </p>
           <img class="circle-graphic margin-left" src="dist/img/ieGraphic.png" alt="graphic for innovation economy" />
         </div>
       </div>
       <hr>
-      <!--Energy & Petrochemical Manufacturing -->
+      <!--The Amazon HQ2 Ripple Effect -->
       <span id="energy-petro-manu"></span>
-      <h2 class="medium-margin-top margin-bottom text-center">Energy & Petrochemical Manufacturing</h2>
+      <h2 class="medium-margin-top margin-bottom text-center">The Amazon HQ2 Ripple Effect</h2>
       <div class="medium-margin-bottom">
         <div class="flex-wrapper-content">
           <img class="circle-graphic margin-right" src="dist/img/epmGraphic.png" alt="graphic for Energy & Petrochemical Manufacturing" />
-          <p>Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. Content goes here. </p>
+          <p>The Allegheny Conference participated in the regional team that formulated and submitted Pittsburgh’s Amazon HQ2 proposal. The region was named as a Top 20 finalist for the project, which has significantly raised the profile of Pittsburgh for additional technology investment and media attention. </p>
         </div>
       </div>
+      <hr>
+      <!--Energy Related Manufacturing -->
+      <span id="energy-petro-manu"></span>
+      <h2 class="medium-margin-top margin-bottom text-center">Energy-Related Manufacturing</h2>
+      <div class="medium-margin-bottom">
+        <div class="flex-wrapper-content-reverse">
+          <img class="circle-graphic margin-right" src="dist/img/epmGraphic.png" alt="graphic for Energy & Petrochemical Manufacturing" />
+          <div>
+            <p>The Shell Pennsylvania Chemicals petrochemical facility is under construction and growing by the day. An economic development win from 2016, the facility now hosts 2,950 construction workers, and key pieces of equipment vital to the operation of the ethane cracker arrive routinely.</p>
+            <p>The cracker is paying dividends, and it’s not even operating yet. Six new supply chain projects related to Shell’s facility are underway in the Pittsburgh region.</p>
+          </div>
+        </div>
+      </div>
+
+      <p><em>The Allegheny Conference’s<strong> 2018-19 Agenda: Creative a Next Generation Economy for All</strong> focuses on Growing the Economy and Improving the Region’s Competitiveness. View our progress on improving the region’s competitiveness <a href="improving-competitiveness.html">here</a>.</em></p>
     </main>
 
     <!--footer-->
@@ -108,6 +161,12 @@
         <a href="https://www.pittsburghregion.org/" target="_blank">Pittsburgh Regional Alliance</a>
       </div>
     </footer>
-
+    <script>
+      $('.caret').click(function(e) {
+        e.preventDefault();
+        $('.sub-nav').not($(this).next('.sub-nav')).slideUp();
+        $(this).next('.sub-nav').slideToggle();
+      });
+    </script>
   </body>
 </html>

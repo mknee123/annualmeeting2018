@@ -151,6 +151,59 @@ header h1 {
   width: 0;
   left: -15px;
 }
+.caret {
+    font-size: 1rem;
+    font-weight: bold;
+
+    margin-left: 2px;
+    /*
+    width: 0px;
+    height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent; */
+}
+/** SUB PAGES NAV NEW*/
+.wrapper-nav {
+  z-index: 6;
+  position: absolute;
+  width: 100%;
+}
+.nav-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-two li {
+  flex: 1;
+  padding:.5rem  0;
+  align-self: stretch;
+  /*border-top:white solid 2px;
+  border-bottom:white solid 2px;*/
+}
+.nav-two li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-two li a:hover {
+  text-decoration: none;
+  color: white;
+}
+.sub-nav {
+  display: none;
+  margin-top: .5rem;
+}
+.sub-nav .active {
+  display: block;
+
+}
+.sub-nav li {
+  border-top: solid lightgrey 1px;
+}
 
 
 /**feature image area **/
@@ -261,6 +314,17 @@ footer a:hover {
     flex:1;
     color:white;
     padding: .5rem 0;
+  }
+  .nav-two {
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .nav-two li {
+    align-self: auto;
+    /*border-top:white solid 2px;
+    border-bottom:white solid 2px;*/
   }
   .feat-img {
     display: block;
