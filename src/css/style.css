@@ -211,6 +211,9 @@ header h1 {
 .sub-nav li {
   border-top: solid lightgrey 1px;
 }
+.sub-nav li:last-child {
+  padding-bottom: 0;
+}
 
 
 /**feature image area **/
