@@ -16,7 +16,7 @@
      <link rel="stylesheet" href="https://use.typekit.net/hdw7hqg.css">
 
     <link rel="stylesheet" type="text/css" href="dist/css/style.css" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--favicon-->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -43,18 +43,37 @@
         <a href="index.html" class="flex-wrapper-header">
           <h1>Annual</h1> <span class="rotated">2018</span> <h1>Meeting</h1>
         </a>
-      <!--navigation -->
-      <nav class="flex-wrapper-nav">
-        <a class="nav-box welcome" href="welcome.html">
-          <span class="nav-item"><span class="nav-text">Welcome</span></span>
-        </a>
-        <a class="nav-box growing" href="growing-economy.html">
-          <span class="nav-item"><span class="nav-text">Growing the Economy</span></span>
-        </a>
-        <a class="nav-box improving" href="#">
-          <span class="nav-item"><span class="nav-text">Improving Competitiveness</span></span>
-        </a>
-      </nav>
+        <!--navigation 2-->
+        <nav class="wrapper-nav text-center">
+          <ul class="nav-two">
+            <li class="welcome">
+              <a href="welcome.html">
+                <span class="nav-item"><span class="nav-text">Welcome</span></span>
+              </a>
+            </li>
+            <li class="growing">
+              <a class="test" href="growing-economy.html">
+                <span class="nav-item"><span class="nav-text">Growing the Economy</span></span></a>
+                <span class="caret"></span>
+                <ul class="sub-nav">
+                  <li> <span class="nav-item"><span class="nav-text">One</span></span></li>
+                  <li><span class="nav-item"><span class="nav-text">Two</span></span></li>
+                </ul>
+
+            </li>
+            <li class="improving">
+              <a href="#">
+                <span class="nav-item"><span class="nav-text">Improving Competitiveness</span></span>
+              </a>
+              <span class="caret"></span>
+              <ul class="sub-nav">
+                <li> <span class="nav-item"><span class="nav-text">three</span></span></li>
+                <li><span class="nav-item"><span class="nav-text">four</span></span></li>
+              </ul>
+            </li>
+          </ul>
+
+        </nav>
     </header>
     <!--feature image graphic -->
     <div class="feat-img">
@@ -163,6 +182,6 @@
         <a href="https://www.pittsburghregion.org/" target="_blank">Pittsburgh Regional Alliance</a>
       </div>
     </footer>
-
+    <script src="dist/js/script.js"> </script>
   </body>
 </html>

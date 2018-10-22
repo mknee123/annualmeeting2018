@@ -168,27 +168,22 @@ header h1 {
     font-size: 1rem;
     font-weight: bold;
     margin-left: 2px;
-    /*
-    width: 0px;
-    height: 0;
-    display: inline-block;
-    vertical-align: middle;
-    border-top: 4px dashed;
-    border-top: 4px solid\9;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent; */
 }
 /** SUB PAGES NAV NEW*/
 .wrapper-nav {
   z-index: 6;
   position: absolute;
   width: 100%;
+  border-top: 2px solid white;
 }
 .nav-two {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.nav-two ul {
+  margin-bottom: 0;
 }
 .nav-two li {
   flex: 1;
@@ -220,16 +215,13 @@ header h1 {
 
 /**feature image area **/
 .feat-img {
-  /*background: orange;
-  width: 100%;
-  height: 320px;*/
   display: none;
 }
 /** CONTENT AREA **/
 main {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: 9.75rem auto;
 }
 .entry-content {
   margin:0 1rem;
@@ -275,10 +267,11 @@ main {
 }
 
 .circle-graphic {
-  max-width:225px;
+  max-width:175px;
   min-width: 150px;
   width: 100%;
   margin-bottom: 2rem;
+  flex: 1 0 auto;
 }
 
 footer {
@@ -340,6 +333,10 @@ footer a:hover {
   }
   .feat-img {
     display: block;
+    margin-top:2.75rem;
+  }
+  main {
+    margin-top: 0;
   }
   .entry-content {
     margin:0;
@@ -376,13 +373,19 @@ footer a:hover {
     font-size: 1.35rem;
   }
   /** SUB PAGES NAV */
-
+  .feat-img {
+    display: block;
+    margin-top:2.8rem;
+  }
 
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   h3 {
     font-size: 1.55rem;
+  }
+  .feat-img {
+    margin-top:2.8rem;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
