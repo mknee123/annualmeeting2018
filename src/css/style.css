@@ -8,13 +8,17 @@
 .text-upper { text-transform: uppercase;}
 .text-center { text-align: center;}
 
+:root {
+    font-family: 'proxima-nova',sans-serif;
+}
+
 html {
   font-size: 14px;
   margin:0 auto;
 
 }
 body {
-  font-family: proxima-nova, sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -40,12 +44,12 @@ h3 {
   letter-spacing: 2px;
 }
 
-
 header {
   background: #ff9000;
   color: white;
   text-align: center;
   padding: 1rem 0 0;
+  height: auto;
 }
 
 header p {
@@ -62,6 +66,8 @@ header p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background: #ff9000;
+  padding: 1rem;
 }
 header a {
   text-decoration: none;
@@ -77,6 +83,10 @@ header h1 {
   font-family: aktiv-grotesk-condensed, sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+header img {
+  max-width: 615px;
+  width: 100%;
 }
  span.rotated {
   transform: rotate(-90deg);
@@ -104,23 +114,54 @@ header h1 {
   margin:.25rem 0;
 }
 .box {
-  flex:1;
+  flex:1 1 auto;
   color:white;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
-
 .welcome {
   background: #69939f;
+}
+
+.box.welcome {
+  background: #69939f;
+  background-image: url('../img/welcome_block_bg.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  height: 15vh;
 }
 .growing {
   background: #f9ca3e;
 }
+.box.growing {
+  background: #f9ca3e;
+  background-image: url('../img/growing_block_bg.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  height: 15vh;
+}
 .improving {
   background: #cf381d;
+}
+.box.improving {
+  background: #cf381d;
+  background-image: url('../img/improving_block_bg.jpg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  height: 15vh;
+}
+.improving img {
+  height: 56vh;
 }
 
 .box-graphic {
@@ -284,23 +325,24 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  height: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .footer-logo {
   max-width: 200px;
   width:100%;
   margin: 0 auto;
-  padding: 1rem 0 1.5rem;
+  max-height: 17vh;
+  padding: 1rem 0;
 }
 
 footer a {
   color:white;
   text-decoration: none;
-  padding: 0rem;
+  padding: 0;
 }
 footer a:hover {
   color:white;
@@ -310,6 +352,15 @@ footer a:hover {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  header {
+    height: 22vh;
+  }
+  header img {
+    max-height: 183px;
+    max-width: 615px;
+    width: 100%;
+    padding: 0 .25rem;
+  }
   h3 {
     font-size: 1.25rem;
   }
@@ -366,8 +417,21 @@ footer a:hover {
   .margin-left {
     margin-left: 3rem;
   }
+  .box.welcome {
+    height: 56vh;
+    background-position: bottom left;
+  }
+  .box.growing {
+    height: 56vh;
+  }
+  .box.improving {
+    height: 56vh;
+  }
+  footer {
+    height: 22vh;
+  }
   footer a {
-    padding: 1rem;
+    padding: 0 1rem .5rem;;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */

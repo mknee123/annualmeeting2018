@@ -38,24 +38,46 @@
   </head>
   <body>
     <!--header -->
-    <header>
-      <p>Allegheny Conference on Community Development</p>
-        <a href="index.html" class="flex-wrapper-header">
-          <h1>Annual</h1> <span class="rotated">2018</span> <h1>Meeting</h1>
+    <!--header -->
+    <header class="flex-wrapper-header">
+        <a href="index.html">
+          <img src="dist/img/site_title.png" alt="allegheny conference of community development annual meeting 2018" />
         </a>
-      <!--navigation -->
-      <nav class="flex-wrapper-nav">
-        <a class="nav-box welcome" href="#">
-          <span class="nav-item"><span class="nav-text">Welcome</span></span>
-        </a>
-        <a class="nav-box growing" href="growing-economy.html">
-        <span class="nav-item"><span class="nav-text">Growing the Economy</span></span>
-        </a>
-        <a class="nav-box improving" href="improving-competitiveness.html">
-          <span class="nav-item"><span class="nav-text">Improving Competitiveness</span></span>
-        </a>
-      </nav>
     </header>
+    <!--navigation 2-->
+  <nav class="wrapper-nav text-center">
+      <ul class="nav-two">
+        <li class="welcome">
+          <a href="welcome.html">
+            <span class="nav-item"><span class="nav-text">Welcome</span></span>
+          </a>
+        </li>
+        <li class="growing">
+          <a class="test" href="growing-economy.html">
+            <span class="nav-item"><span class="nav-text">Growing the Economy</span></span></a>
+            <span class="caret"></span>
+            <ul class="sub-nav">
+              <li><a href="growing-economy.html#innovation-economy"> <span class="nav-item"><span class="nav-text">Innovation Economic Development</span></span></a></li>
+              <li><a href="growing-economy.html#energy-petro-manu"> <span class="nav-item"><span class="nav-text">Energy-Related Manufacturing</span></span></a></li>
+            </ul>
+
+        </li>
+        <li class="improving">
+          <a href="#">
+            <span class="nav-item"><span class="nav-text">Improving Competitiveness</span></span>
+          </a>
+          <span class="caret"></span>
+          <ul class="sub-nav">
+            <li><a href="#economic-inclusion"> <span class="nav-item"><span class="nav-text">Economic Inclusion</span></span></a></li>
+            <li><a href="#community"> <span class="nav-item"><span class="nav-text">Community & Sustainability</span></span></a></li>
+            <li><a href="#infrastructure"> <span class="nav-item"><span class="nav-text">Infrastructure</span></span></a></li>
+            <li><a href="#business"> <span class="nav-item"><span class="nav-text">Business Competitiveness</span></span></a></li>
+            <li><a href="#workforce"> <span class="nav-item"><span class="nav-text">Workforce & Education</span></span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
     <!--feature image graphic -->
     <div class="feat-img">
 
@@ -99,6 +121,6 @@
         <a href="https://www.pittsburghregion.org/" target="_blank">Pittsburgh Regional Alliance</a>
       </div>
     </footer>
-
+    <script src="dist/js/script.js"> </script>
   </body>
 </html>
