@@ -9,14 +9,12 @@
     <title>Measuring the Region - Annual Meeting 2018</title>
     <!--css reset -->
     <link rel="stylesheet" type="text/css" href="dist/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--Fonts -->
-     <!--Typekit font for Aktiv Grotesk -->
+     <!--Typekit font for Proxima Nova and Hummingbirg -->
      <link rel="stylesheet" href="https://use.typekit.net/zbl4htd.css">
-     <!-- Typekit font for Proxima Nova -->
-     <link rel="stylesheet" href="https://use.typekit.net/hdw7hqg.css">
 
     <link rel="stylesheet" type="text/css" href="dist/css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Scroll Reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--favicon-->
@@ -37,11 +35,19 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2436246-23"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-2436246-23');
+  </script>
   </head>
   <body>
     <!--header -->
-    <!--header -->
-    <header class="flex-wrapper-header">
+    <header>
         <a href="index.html">
           <img src="dist/img/site_title.png" alt="allegheny conference of community development annual meeting 2018" />
         </a>
@@ -49,11 +55,10 @@
       <!--navigation 2-->
     <nav class="wrapper-nav text-center">
         <ul class="nav-two">
-          <li class="welcome">
-            <a href="welcome.html">
-              <span class="nav-item"><span class="nav-text">Welcome</span></span>
-            </a>
+          <li class="welcome-link">
+            <a href="welcome.html"><span class="nav-item"><span class="nav-text"> Welcome</a>
           </li>
+
           <li class="growing">
             <a class="test" href="growing-economy.html">
               <span class="nav-item"><span class="nav-text">Growing the Economy</span></span></a>
@@ -61,132 +66,160 @@
               <ul class="sub-nav">
                 <li><a href="growing-economy.html#innovation-economy"> <span class="nav-item"><span class="nav-text">Innovation Economic Development</span></span></a></li>
                 <li><a href="growing-economy.html#energy-petro-manu"> <span class="nav-item"><span class="nav-text">Energy-Related Manufacturing</span></span></a></li>
+                <li><a href="growing-economy.html#win"> <span class="nav-item"><span class="nav-text">A Big Win for the Region</span></span></a></li>
               </ul>
 
           </li>
           <li class="improving">
-            <a href="#">
+            <a href="improving-competitiveness.html">
               <span class="nav-item"><span class="nav-text">Improving Competitiveness</span></span>
             </a>
             <span class="caret"></span>
             <ul class="sub-nav">
-              <li><a href="#economic-inclusion"> <span class="nav-item"><span class="nav-text">Economic Inclusion</span></span></a></li>
-              <li><a href="#community"> <span class="nav-item"><span class="nav-text">Community & Sustainability</span></span></a></li>
-              <li><a href="#infrastructure"> <span class="nav-item"><span class="nav-text">Infrastructure</span></span></a></li>
-              <li><a href="#business"> <span class="nav-item"><span class="nav-text">Business Competitiveness</span></span></a></li>
-              <li><a href="#workforce"> <span class="nav-item"><span class="nav-text">Workforce & Education</span></span></a></li>
+              <li><a href="improving-competitiveness.html#economic-inclusion"> <span class="nav-item"><span class="nav-text">Economic Inclusion</span></span></a></li>
+              <li><a href="improving-competitiveness.html#community"> <span class="nav-item"><span class="nav-text">Community & Sustainability</span></span></a></li>
+              <li><a href="improving-competitiveness.html#infrastructure"> <span class="nav-item"><span class="nav-text">Infrastructure</span></span></a></li>
+              <li><a href="improving-competitiveness.html#business"> <span class="nav-item"><span class="nav-text">Business Competitiveness</span></span></a></li>
+              <li><a href="improving-competitiveness.html#workforce"> <span class="nav-item"><span class="nav-text">Workforce & Education</span></span></a></li>
+            </ul>
+          </li>
+          <li class="welcome">
+            <a href="#">
+              <span class="nav-item"><span class="nav-text">Measuring the Region</span></span>
+            </a>
+            <span class="caret"></span>
+            <ul class="sub-nav">
+              <li><a href="#growth"> <span class="nav-item"><span class="nav-text">Growth</span></span></a></li>
+              <li><a href="#opportunity"> <span class="nav-item"><span class="nav-text">Opportunity</span></span></a></li>
+              <li><a href="#equity"> <span class="nav-item"><span class="nav-text">Equity</span></span></a></li>
             </ul>
           </li>
         </ul>
       </nav>
-
     <!--feature image graphic -->
     <div class="feat-img">
-      <img src="dist/img/Subbanner_Competitiveness.jpg" alt="Improving Competitiveness Feature Banner Image" />
+      <img src="dist/img/Subbanner_Measuring.jpg" alt="Measuring the Region Feature Banner Image" />
     </div>
-    <main>
-      <div class="medium-margin-top text-center reveal">
-        <h1 class="text-upper margin-bottom">Improving Competitiveness</h1>
+    <main class="medium-margin-bottom content">
+      <div class="text-center reveal">
+        <h1 class="text-upper margin-bottom">Measuring the Region</h1>
 
-        <p class="entry-content">To improve the region’s competitiveness and respond to community needs, the Conference will address regional challenges by focusing on efforts to overcome regional challenges in economic inclusion, community and sustainability, infrastructure, business competitiveness and workforce and education.</p>
+        <p class="entry-content">In 2018, the Allegheny Conference developed a set of metrics to answer a call to reliably track and regularly communicate about our region and our progress in creating a next generation economy for all.  We will benchmark the region according to five measures: growth, opportunity, equity, innovation and sustainability. We launched three of the five measures in 2018 (growth, opportunity and equity) and aim to release the remaining two (innovation and sustainability) in early 2019.</p>
+        <p class="margin-top text-center"><strong>Our baseline analysis suggests a mixed regional performance.</strong></p>
       </div><!--close of entry-content-->
       <!-- icons of innovation Economy and Energy & Petrochemical Manufacturing -->
       <div class="flex-wrapper-icons medium-margin-top medium-margin-bottom">
         <div class="icon">
-          <a href="#economic-inclusion"><img src="dist/img/Icon_EconomicInclusion.svg" alt="icon for economic inclusion" />Economic Inclusion</a>
+          <a href="#growth"><img src="dist/img/Icon_MeasureGrowth.svg" alt="icon for economic inclusion" />Growth</a>
         </div>
         <div class="icon">
-          <a href="#community"><img src="dist/img/Icon_CommunitySust.svg" alt="icon for community & sustainability" />Community &<br/> Sustainability</a>
+          <a href="#opportunity"><img src="dist/img/Icon_MeasureOpportunity.svg" alt="icon for community & sustainability" />Opportunity</a>
         </div>
         <div class="icon">
-          <a href="#infrastructure"><img src="dist/img/Icon_Infrastructure.svg" alt="icon for infrastructure" />Infrastructure</a>
+          <a href="#equity"><img src="dist/img/Icon_MeasureEquity.svg" alt="icon for infrastructure" />Equity</a>
         </div>
-        <div class="icon">
-          <a href="#business"><img src="dist/img/Icon_BizCompetitiveness.svg" alt="icon for business competitiveness" />Business Competitiveness</a>
-        </div>
-        <div class="icon">
-          <a href="#workforce"><img src="dist/img/Icon_WorkforceEducation.svg" alt="icon for workforce & education" />Workforce & Education</a>
-        </div>
+
       </div><!--close of flex-wrapper-->
       <!--graphic divider-->
       <img class="colored-divider" src="dist/img/coloredDivider.jpg" alt="graphic divider" />
       <!-- Economic Inclusion -->
-      <span id="economic-inclusion"></span>
-      <h2 class="medium-margin-top margin-bottom text-center">Economic Inclusion</h2>
+      <span id="growth"></span>
+      <h2 class="medium-margin-top margin-bottom text-center">Growth</h2>
       <div class="medium-margin-bottom">
-        <div class="flex-wrapper-content-reverse">
           <div>
-            <p>The passage of PA House Bill 1419, or “Clean Slate” legislation, “Clean Slate” is an important step in addressing the Pittsburgh region’s workforce challenge while expanding economic inclusion to all of our communities. The bill provides for automatic sealing of criminal records for certain individuals with misdemeanor convictions, allowing potential employers to look past minor mistakes and focus on the qualifications of the individual.</p>
-            <p>A key piece of legislation – HB163 – passed the house and is ready to move in the Pennsylvania senate. This bill would reform the policy of suspending driver’s licenses for minor offenses, which serves as a barrier to employment and reduction in quality of life. This issue has bipartisan support and would improve the economic future of many.</p>
-            <p><strong><em>In 2018, this strategy was chaired by Grant Oliphant, President, The Heinz Endowments.</em></strong></p>
+            <h4 class="text-center thin-margin-bottom"><em>How are our economic development efforts translating into economic progress?</em></h4>
+            <p class="text-center"><strong>Focuses</strong> on the change in the size of the Pittsburgh region’s economy.</p>
+            <div class="flex-graph margin-top thin-margin-bottom">
+              <div class="rated text-center">
+                <small>Lowest<br> Rated</small>
+              </div>
+              <img class="graph" src="dist/img/GrowthChart.svg" alt="graphic for Growth Chart" />
+              <div class="rated text-center">
+                <small>Highest Rated</small>
+              </div>
+            </div>
+              <small>SOURCE: U.S. Bureau of Labor Statistics, U.S. Bureau of Economic Analysis, U.S. Census 2018</small>
+            <p class="margin-top">Over the last five years, jobs have grown less than 2%. GDP has grown by only 11%. We place 13th out of 17 benchmarks. Our overall growth index is more than 3 times lower than that of Austin or Nashville, but similar to Philadelphia and Cleveland.</p>
           </div>
-          <img class="circle-graphic margin-left" src="dist/img/SectorCircle_EcoInclusion.jpg" alt="graphic for Economic Inclusion" />
-        </div>
       </div>
       <hr>
       <!--Community and Sustainability -->
-      <span id="community"></span>
-      <h2 class="medium-margin-top margin-bottom text-center">Community and Sustainability</h2>
+      <span id="opportunity"></span>
+      <h2 class="medium-margin-top margin-bottom text-center">Opportunity</h2>
       <div class="medium-margin-bottom">
-        <div class="flex-wrapper-content">
-          <img class="circle-graphic margin-right" src="dist/img/SectorCircle_Community.jpg" alt="graphic for Community and Sustainability" />
           <div>
-            <p>An increase to the NAP tax credit – which provides long-term sustainable support for locally-based revitalization organizations in low income neighborhoods – is nearly a reality.  In 2018, the legislation moved closer to passing than ever before. While HB645 successfully passed through the house, it needs a final push to pass the senate. This would increase the “NAP cap” from $18 million to $36 million, providing critical funding to supporting and improving our most vulnerable communities.</p>
-            <p><strong><em>In 2018, this strategy was chaired by Jerry MacCleary, Chairman and CEO, Covestro LLC. </em></strong></p>
+            <h4 class="text-center thin-margin-bottom"><em>How is the standard of living changing in our region?</em></h4>
+            <p class="text-center"><strong>Focuses</strong> on the change in the average wealth and the income produced by the region’s economy.</p>
+            <div class="flex-graph margin-top thin-margin-bottom">
+              <div class="rated text-center">
+                <small>Lowest<br> Rated</small>
+              </div>
+              <img class="graph" src="dist/img/OpportunityChart.svg" alt="graphic for Opportunity Chart" />
+              <div class="rated text-center">
+                <small>Highest Rated</small>
+              </div>
+            </div>
+
+              <small>SOURCE: U.S. Bureau of Labor Statistics, U.S. Bureau of Economic Analysis, U.S. Census 2018</small>
+            <p class="margin-top">Our region ranks 4th of 17 benchmarks. Over the last 5 years, our per capita GDP grew 12.3%. Average wages grew 9.4%. Our opportunity index is 54%, which is above the national average but also only 63% of the opportunity index of Austin. While we remain a fairly low wage region, the five-year-wage growth translated into a higher opportunity ranking. Overall, the little gains we experience in our economy are distributed fairly evenly across different populations.</p>
           </div>
-        </div>
+
       </div>
       <hr>
       <!-- Infrastructure -->
-      <span id="infrastructure"></span>
-      <h2 class="medium-margin-top margin-bottom text-center">Infrastructure</h2>
+      <span id="equity"></span>
+      <h2 class="medium-margin-top margin-bottom text-center">Equity</h2>
       <div class="medium-margin-bottom">
-        <div class="flex-wrapper-content-reverse">
-          <p>Collaborating with partners across the Pittsburgh region, we were a key partner in organizing the Rail~Volution Conference in October. A national conference that assembles transportation infrastructure thought leaders in a place to share ideas, Rail~Volution offered the Pittsburgh region a platform to hone strategies and influence policies in the public transportation, transit-oriented development, placemaking and community development fields.</p>
-          <img class="circle-graphic margin-left" src="dist/img/SectorCircle_Infrastructure.jpg" alt="graphic for Infrastructure" />
-        </div>
-      </div>
-      <hr>
-      <!--Business Competitiveness -->
-      <span id="business"></span>
-      <h2 class="medium-margin-top margin-bottom text-center">Business Competitiveness</h2>
-      <div class="medium-margin-bottom">
-        <div class="flex-wrapper-content">
-          <img class="circle-graphic margin-right" src="dist/img/SectorCircle_BizComp.jpg" alt="graphic for Business Competitiveness" />
+
           <div>
-            <p>We successfully advocated for a fix to legislation from Pennsylvania Department of Revenue’s that made PA’s business environment less competitive. Specifically regarding “bonus depreciation,” we worked with partners across the Commonwealth to change a policy and allow Pennsylvania businesses to deduct depreciation of a purchased asset before it’s sold or disposed. We prevented PA from being the only state moving forward with this type of tax policy.</p>
-            <p><strong><em>In 2018, this strategy was chaired by Nick DeIuliis, President and CEO, CNX Resources Corporation. </em></strong></p>
+            <h4 class="text-center thin-margin-bottom"><em>How is the economic situation in our region changing for racial minority residents in our region?</em></h4>
+            <p class="text-center"><strong>Focuses</strong> on equity of distribution of the benefits of growth and opportunity among the region’s residents.</p>
+            <div class="margin-top thin-margin-bottom flex-graph">
+              <div class="rated text-center">
+                <small>Lowest<br> Rated</small>
+              </div>
+                <img class="graph" src="dist/img/EquityChart.svg" alt="graphic for Equity Chart" />
+              <div class="rated text-center">
+                <small>Highest Rated</small>
+              </div>
+            </div>
+
+
+            <small>SOURCE: U.S. Bureau of Labor Statistics, U.S. Bureau of Economic Analysis, U.S. Census 2018</small>
+            <p class="margin-top">The region ranks 8th of 17 benchmarks. We saw an 8% minority wage growth; a 14% minority labor participation growth; and a 12% decline in minority poverty. We are just slightly above the national average and similar to Indianapolis. The region’s equity ranking is 54% below the equity index of Seattle and 37% below the equity index of Denver. </p>
+            <p>We will announce the completion of the additional measures in the coming months.</p>
           </div>
-        </div>
       </div>
       <hr>
-      <!-- Workforce and Education -->
-      <span id="workforce"></span>
-      <h2 class="medium-margin-top margin-bottom text-center">Workforce & Education</h2>
-      <div class="medium-margin-bottom">
-        <div class="flex-wrapper-content-reverse">
-          <div>
-            <p>In a significant step to enhance the preparation of the workforce of the future, the <a href="https://mailchi.mp/e9b9b0d114ed/statement-from-gpcc-president-matt-smith-on-todays-reauthorization-of-perkins-act-cte-funding-2630525" target="_blank">federal Carl D. Perkins Career and Technical Education Act, now known as the Strengthening Career and Technical Education for the 21st Century Act, was reauthorized</a>. The reauthorization of this legislation will help train the current and future workforce in demand in the Pittsburgh region. </p>
-            <p>This past year, we increased our efforts to retain and attract talent. We partnered with Thrival to capitalize on the tech talent audience in town for the innovation conference; we armed presidents from 18 regional colleges and universities with talking points about the region and a call to stay upon graduation; and we provided career services offices with information highlighting off campus amenities in the region.</p>
-            <p><strong><em>In 2018, this strategy was chaired by Dave Malone, President and CEO, Gateway Financial.</em></strong></p>
-          </div>
-          <img class="circle-graphic margin-left" src="dist/img/SectorCircle_WorkforceEd.jpg" alt="graphic for workforce and education" />
-        </div>
-      </div>
-      <hr>
-        <p class="text-center"><em>The Allegheny Conference’s<strong> 2018-19 Agenda: Creative a Next Generation Economy for All</strong> focuses on Growing the Economy and Improving the Region’s Competitiveness. View our progress on Growing the Economy <a href="growing-economy.html">here</a>.</em></p>
+
+        <p class="text-center"><em>The Allegheny Conference’s<strong> 2018-19 Agenda: Creating a Next Generation Economy for All</strong> focuses on Growing the Economy, Improving the Region’s Competitiveness, and Measuring the Region. View our progress on Growing the Economy <a href="growing-economy.html">here</a> and Improving the Region's Competitiveness <a href="improving-competitiveness.html">here</a>.</em></p>
     </main>
 
     <!--footer-->
     <footer>
       <!--footer logo in white -->
-      <img class="footer-logo" src="dist/img/New_ACCDlogo_white.svg" alt="Allegheny Conference on Community Development white logo"/>
-      <div class="flex-wrapper">
+      <div>
+      <a href="https://www.alleghenyconference.org/" target="_blank">  <img class="footer-logo" src="dist/img/New_ACCDlogo_white.svg" alt="Allegheny Conference on Community Development white logo"/></a>
+      </div>
         <a href="https://www.greaterpittsburghchamberofcommerce.com/" target="_blank">Greater Pittsburgh Chamber of Commerce</a>
         <a href="https://www.pelgp.org/" target="_blank">Pennsylvania Economy League of Greater Pittsburgh</a>
         <a href="https://www.pittsburghregion.org/" target="_blank">Pittsburgh Regional Alliance</a>
-      </div>
+
     </footer>
-    <script src="dist/js/script.js"> </script>
+    <script>
+      //Scroll Reveal Code
+      ScrollReveal({ distance: '20px' }).reveal('.reveal', { delay: 200 , origin: 'bottom', easing: 'cubic-bezier(0.42, 0, 0.61, 1.19)'});
+
+      ScrollReveal().reveal('.icon', { interval: 300 , delay: 400,  scale: 0.85 , easing: 'cubic-bezier(0.42, 0, 0.61, 1.19)'});
+
+      ScrollReveal().reveal('.left-reveal', { delay: 400,  origin: 'left',  easing: 'cubic-bezier(0.42, 0, 0.61, 1.19)'});
+      ScrollReveal().reveal('.right-reveal', { delay: 400,  origin: 'right',  easing: 'cubic-bezier(0.42, 0, 0.61, 1.19)'});
+
+      loadMore('.icon').then(function() {
+        ScrollReveal().sync();
+      });
+    </script>
+    <script async src="dist/js/script.js"> </script>
+    <script async src="dist/js/sizescript.js"> </script>
   </body>
 </html>

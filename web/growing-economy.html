@@ -9,15 +9,12 @@
     <title>Growing Economy - Annual Meeting 2018</title>
     <!--css reset -->
     <link rel="stylesheet" type="text/css" href="dist/css/reset.css" />
+    <!--bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--Fonts -->
-     <!--Typekit font for Aktiv Grotesk -->
+     <!--Typekit font for Proxima Nova and Hummingbirg -->
      <link rel="stylesheet" href="https://use.typekit.net/zbl4htd.css">
-     <!-- Typekit font for Proxima Nova -->
-     <link rel="stylesheet" href="https://use.typekit.net/hdw7hqg.css">
-
     <link rel="stylesheet" type="text/css" href="dist/css/style.css" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Scroll Reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -39,32 +36,30 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2436246-23"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-2436246-23');
+  </script>
   </head>
   <body>
     <!--header -->
-    <header class="flex-wrapper-header">
+    <header>
       <a href="index.html">
         <img src="dist/img/site_title.png" alt="allegheny conference of community development annual meeting 2018" />
       </a>
     </header>
-    <!--<div class="welcome-nav text-center">
-      <ul class="nav-two" style="margin-bottom: 0;">
-        <li class="welcome-link">
-          <a href="welcome.html"><span class="nav-item"><span class="nav-text">A Welcome from Leadership</a>
-        </li>
-      </ul>
-    </div>-->
     <!--navigation 2-->
     <nav class="wrapper-nav text-center">
       <ul class="nav-two">
         <li class="welcome-link">
-          <a href="welcome.html"><span class="nav-item"><span class="nav-text">A Welcome from Leadership</a>
+          <a href="welcome.html"><span class="nav-item"><span class="nav-text"> Welcome</a>
         </li>
-        <li class="welcome">
-          <a href="welcome.html">
-            <span class="nav-item"><span class="nav-text">Welcome</span></span>
-          </a>
-        </li>
+
         <li class="growing">
           <a class="test" href="#">
             <span class="nav-item"><span class="nav-text">Growing the Economy</span></span></a>
@@ -72,6 +67,7 @@
             <ul class="sub-nav">
               <li><a href="#innovation-economy"> <span class="nav-item"><span class="nav-text">Innovation Economic Development</span></span></a></li>
               <li><a href="#energy-petro-manu"> <span class="nav-item"><span class="nav-text">Energy-Related Manufacturing</span></span></a></li>
+              <li><a href="#win"> <span class="nav-item"><span class="nav-text">A Big Win for the Region</span></span></a></li>
             </ul>
         </li>
         <li class="improving">
@@ -87,30 +83,44 @@
             <li><a href="improving-competitiveness.html#workforce"> <span class="nav-item"><span class="nav-text">Workforce & Education</span></span></a></li>
           </ul>
         </li>
+        <li class="welcome">
+          <a href="measuring-region.html">
+            <span class="nav-item"><span class="nav-text">Measuring the Region</span></span>
+          </a>
+          <span class="caret"></span>
+          <ul class="sub-nav">
+            <li><a href="measuring-region.html#growth"> <span class="nav-item"><span class="nav-text">Growth</span></span></a></li>
+            <li><a href="measuring-region.html#opportunity"> <span class="nav-item"><span class="nav-text">Opportunity</span></span></a></li>
+            <li><a href="measuring-region.html#equity"> <span class="nav-item"><span class="nav-text">Equity</span></span></a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <!--feature image graphic -->
     <div class="feat-img">
       <img src="dist/img/growingEconomyBanner.jpg" alt="Growing the Economy Feature Banner Image" />
     </div>
-    <main class="medium-margin-bottom">
-      <div class="medium-margin-top text-center reveal">
+    <main class="medium-margin-bottom content">
+      <div class="text-center reveal load-hidden">
         <h1 class="text-upper margin-bottom">Growing the Economy</h1>
 
-        <p class="entry-content">We’re focusing economic development strategies to grow our economy through business attraction and retention across five strategic sectors, including a focus on <strong>innovation</strong> and <strong>energy-related manufacturing</strong>.</p>
+        <p class="entry-content">We’re focusing economic development strategies to grow our economy through business attraction and retention across five strategic sectors (advanced manufacturing; energy; financial business services; healthcare and life sciences; IT), including a focus on <strong>innovation</strong> and <strong>energy-related manufacturing</strong>.</p>
         <p class="margin-top text-center"><em><strong>In 2018, this strategy was chaired by Laura Karet, Vice Chair of the Allegheny Conference and CEO, Giant Eagle, Inc.</strong></em></p>
       </div><!--close of entry-content-->
       <!-- icons of innovation Economy and Energy & Petrochemical Manufacturing -->
       <div style="max-width:600px; width:100%; margin:0 auto;">
         <div class="flex-wrapper-icons medium-margin-top medium-margin-bottom" >
-        <div class="icon">
-          <a href="#innovation-economy"><img src="dist/img/Icon_InnovationEconomy.svg" alt="icon for Innovation Economy" />Innovation Economic<br/> Development</a>
-        </div>
+          <div class="icon load-hidden">
+            <a href="#innovation-economy"><img src="dist/img/Icon_InnovationEconomy.svg" alt="icon for Innovation Economy" />Innovation Economic<br/> Development</a>
+          </div>
 
-        <div class="icon">
-          <a href="#energy-petro-manu"><img src="dist/img/Icon_EnergyPetroManu.svg" alt="icon for Energy & Petrochemical Manufacturing" />Energy-Related<br/> Manufacturing</a>
-        </div>
-      </div><!--close of flex-wrapper-->
+          <div class="icon load-hidden">
+            <a href="#energy-petro-manu"><img src="dist/img/Icon_EnergyPetroManu.svg" alt="icon for Energy & Petrochemical Manufacturing" />Energy-Related<br/> Manufacturing</a>
+          </div>
+          <div class="icon load-hidden">
+            <a href="#win"><img src="dist/img/Icon_BigWin.svg" alt="icon for Big Win" />A Big Win<br/> for the Region</a>
+          </div>
+        </div><!--close of flex-wrapper-->
       </div>
       <!--graphic divider-->
       <img class="colored-divider" src="dist/img/coloredDivider.jpg" alt="graphic divider" />
@@ -119,13 +129,23 @@
       <h2 class="medium-margin-top margin-bottom text-center">Innovation Economic Development</h2>
       <div class="medium-margin-bottom">
         <div class="flex-wrapper-content-reverse">
-          <div class="left-reveal">
-            <p>The Pittsburgh Regional Alliance – the Allegheny Conference’s economic development marketing affiliate – attracted a signature innovation-related project to the region. San Francisco-based Affirm, which creates financial product and alternatives to traditional credit, chose Pittsburgh for its second office primarily because of Pittsburgh’s available tech talent. The company will create 100 jobs by the end of 2019, anticipating to grow the office to 500 in coming years. The PRA thanks the robust regional partnership that worked tirelessly to make this win a reality.</p>
-            <p>The Allegheny Conference participated in the regional team that formulated and submitted Pittsburgh’s Amazon HQ2 proposal. The region was named as a Top 20 finalist for the project, which has significantly raised the profile of Pittsburgh for additional technology investment and media attention. As a result, we’ve ramped up marketing the region to innovation-related companies. We traveled with a regional coalition to Seattle for the GeekWire Summit, and we also hosted journalists from publications such as <em>Fast Company</em>, <em>Forbes</em>, <em>VentureBeat</em>, <em>ZDNet</em>, <em>Politico</em> and <em>MedTech Insight</em> for a media tour of Pittsburgh’s innovation assets.</p>
+          <div class="left-reveal load-hidden">
+            <p>In 2018, the Allegheny Conference participated in the regional team that formulated and submitted Pittsburgh’s Amazon HQ2 proposal. The region was named as a Top 20 finalist for the project, which has significantly raised the profile of Pittsburgh for additional technology investment and media attention. As a result, we have been considered for other projects because we were an HQ2 finalist, and we have a regional team encompassing the business, government, academic, nonprofit and philanthropic communities that can mobilize quickly to address new opportunities and challenges.</p>
+
+
           </div>
-          <img class="circle-graphic margin-left right-reveal" src="dist/img/ieGraphic.png" alt="graphic for innovation economy" />
+          <img class="circle-graphic margin-left right-reveal load-hidden" src="dist/img/SectorCircle_Inovation.jpg" alt="graphic for innovation economy" />
+        </div>
+        <div class="left-reveal load-hidden reg-wrapper">
+          <p>While Amazon may not have chosen our region for HQ2, we are seeing other signature innovation-related projects coming here. One example is San Francisco-based Affirm, a fast-growing, five-year old company that creates financial products and alternatives to traditional credit, chose Pittsburgh for its second office primarily because of Pittsburgh’s available tech talent. The company plans to create 100 jobs by the end of 2019, anticipating to grow the office to 500 in coming years. The PRA thanks the State, Allegheny County, and City of Pittsburgh for helping to make this win a reality.</p>
+          <p>To support our economic development efforts we ramped up marketing the region to innovation-related companies. We traveled with a regional coalition to Seattle for the GeekWire Summit, and we also hosted journalists from publications such as <em>Fast Company</em>, <em>Forbes</em>, <em>VentureBeat</em>, <em>ZDNet</em>, <em>Politico</em> and <em>MedTech Insight</em> for a media tour of Pittsburgh’s innovation assets.</p>
+          <p>Finally, to ensure we unlock our full potential of our innovation opportunity, we developed an innovation strategy with a focus on a number of areas, including talent, infrastructure, policies and economic climate, place-making, corporate engagement, and business attraction. We are collaborating with tech-based economic development partners to find ways to help build on their years of progress.</p>
+          <p>One initiative is a “first customer” program. We are partnering with Innovation Works and Pittsburgh’s Urban Redevelopment Authority to create more meaningful, scalable matches between regional startups and established businesses. Another initiative is aligning our business attraction efforts with  the City of Pittsburgh, Allegheny County, Pitt, CMU, Innovate PGH and local accelerator Ascender to target tech company attraction, with a focus on companies looking to expand outside of the Silicon Valley.</p>
         </div>
       </div>
+      <!--sponsor ad UPMC -->
+      <p style="text-align:center;"><small>Sponsor Ad</small></p>
+      <img src="dist/img/sponsor_upmc.jpg" alt="UPMC Sponsor Ad" class="sponsor-ad"/>
       <hr>
 
       <!--Energy Related Manufacturing -->
@@ -133,27 +153,58 @@
       <h2 class="medium-margin-top margin-bottom text-center">Energy-Related Manufacturing</h2>
       <div class="medium-margin-bottom">
         <div class="flex-wrapper-content">
-          <img class="circle-graphic margin-right left-reveal" src="dist/img/epmGraphic.png" alt="graphic for Energy & Petrochemical Manufacturing" />
-          <div class="right-reveal">
+          <img class="circle-graphic margin-right left-reveal load-hidden" src="dist/img/epmGraphic.png" alt="graphic for Energy & Petrochemical Manufacturing" />
+          <div class="right-reveal load-hidden">
             <p>The Shell Pennsylvania Chemicals petrochemical facility is under construction and growing by the day. An economic development win from 2016, the facility now hosts 2,950 construction workers, and key pieces of equipment vital to the operation of the ethane cracker arrive routinely.</p>
             <p>Although under construction, the cracker is already paying dividends. Six new supply chain projects related to Shell’s facility are underway in the Pittsburgh region.</p>
           </div>
         </div>
       </div>
+      <!--sponsor ad Peoples -->
+      <p style="text-align:center;"><small>Sponsor Ad</small></p>
+      <img src="dist/img/sponsor_peoples.jpg" alt="Peoples Sponsor Ad" class="sponsor-ad"/>
       <hr>
-      <p class="text-center"><em>The Allegheny Conference’s<strong> 2018-19 Agenda: Creative a Next Generation Economy for All</strong> focuses on Growing the Economy and Improving the Region’s Competitiveness. View our progress on improving the region’s competitiveness <a href="improving-competitiveness.html">here</a>.</em></p>
+      <!--Energy Related Manufacturing -->
+      <span id="win"></span>
+      <h2 class="medium-margin-top margin-bottom text-center">A Big Win for the Region</h2>
+      <div class="medium-margin-bottom">
+        <div class="flex-wrapper-content-reverse">
+          <div class="left-reveal load-hidden">
+            <p>Based in Ontario, CA, Niagara Bottling, LLC, will be constructing a 456,000 square-foot filtration and bottling operation as part of a $60 million capital investment. After an extensive search throughout the region, the company has acquired a 42-acre site at the Findlay Industrial Park in Findlay Twp. The operation will create 49 jobs initially, with plans to ramp up to 120 jobs at full build-out.</p>
+          </div>
+           <img class="circle-graphic margin-left right-reveal load-hidden" src="dist/img/SectorCircle_BigWin.jpg" alt="graphic for a Big Win for the Region" />
+        </div>
+      </div>
+      <hr>
+        <p class="text-center"><em>The Allegheny Conference’s<strong> 2018-19 Agenda: Creating a Next Generation Economy for All</strong> focuses on Growing the Economy, Improving the Region’s Competitiveness, and Measuring the Region. View our progress on Improving the Region's Competitiveness <a href="improving-competitiveness.html">here</a> and Measuring the Region <a href="measuring-region.html">here</a>.</em></p>
     </main>
 
     <!--footer-->
     <footer>
       <!--footer logo in white -->
-      <img class="footer-logo" src="dist/img/New_ACCDlogo_white.svg" alt="Allegheny Conference on Community Development white logo"/>
-      <div class="flex-wrapper">
+      <div>
+      <a href="https://www.alleghenyconference.org/" target="_blank">  <img class="footer-logo" src="dist/img/New_ACCDlogo_white.svg" alt="Allegheny Conference on Community Development white logo"/></a>
+      </div>
         <a href="https://www.greaterpittsburghchamberofcommerce.com/" target="_blank">Greater Pittsburgh Chamber of Commerce</a>
         <a href="https://www.pelgp.org/" target="_blank">Pennsylvania Economy League of Greater Pittsburgh</a>
         <a href="https://www.pittsburghregion.org/" target="_blank">Pittsburgh Regional Alliance</a>
-      </div>
+
     </footer>
-    <script src="dist/js/script.js"> </script>
+    <script>
+      //Scroll Reveal Code
+      ScrollReveal({ distance: '20px' }).reveal('.reveal', { delay: 200 , origin: 'bottom', easing: 'cubic-bezier(0.42, 0, 0.61, 1.19)'});
+
+      ScrollReveal().reveal('.icon', { interval: 300 , delay: 400,  scale: 0.85 , easing: 'cubic-bezier(0.42, 0, 0.61, 1.19)'});
+
+      ScrollReveal().reveal('.left-reveal', { delay: 400,  origin: 'left',  easing: 'cubic-bezier(0.42, 0, 0.61, 1.19)'});
+      ScrollReveal().reveal('.right-reveal', { delay: 400,  origin: 'right',  easing: 'cubic-bezier(0.42, 0, 0.61, 1.19)'});
+
+      loadMore('.icon').then(function() {
+        ScrollReveal().sync();
+      });
+    </script>
+    <script async src="dist/js/script.js"> </script>
+    <script async src="dist/js/sizescript.js"> </script>
+
   </body>
 </html>

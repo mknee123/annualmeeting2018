@@ -3,6 +3,7 @@
 //----------------------------------//
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
+    babel = require('gulp-babel');
     concat = require('gulp-concat'),
     minifyCSS = require('gulp-minify-css');
 
@@ -26,7 +27,7 @@ gulp.task('browser-sync', function() {
 */
 gulp.task('css', function() {
   gulp.src([
-    'node_modules/bootstrap/dist/css/bootstrap.css',
+    //'node_modules/bootstrap/dist/css/bootstrap.css',
     'src/css/style.css'
   ])
   .pipe(minifyCSS())
@@ -51,6 +52,7 @@ gulp.task('css-reset', function() {
      'node_modules/bootstrap/dist/js/bootstrap.js',
      'src/js/**/*.js'
      ])
+
      .pipe(uglify())
      .pipe(concat('script.js'))
      .pipe(gulp.dest('web/dist/js'));

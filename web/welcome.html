@@ -9,14 +9,11 @@
     <title>Welcome - Annual Meeting 2018</title>
     <!--css reset -->
     <link rel="stylesheet" type="text/css" href="dist/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--Fonts -->
-     <!--Typekit font for Aktiv Grotesk -->
+     <!--Typekit font for Proxima Nova and Hummingbirg -->
      <link rel="stylesheet" href="https://use.typekit.net/zbl4htd.css">
-     <!-- Typekit font for Proxima Nova -->
-     <link rel="stylesheet" href="https://use.typekit.net/hdw7hqg.css">
-
     <link rel="stylesheet" type="text/css" href="dist/css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Scroll Reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -38,11 +35,19 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2436246-23"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-2436246-23');
+  </script>
   </head>
   <body>
     <!--header -->
-    <!--header -->
-    <header class="flex-wrapper-header">
+    <header>
         <a href="index.html">
           <img src="dist/img/site_title.png" alt="allegheny conference of community development annual meeting 2018" />
         </a>
@@ -50,10 +55,8 @@
     <!--navigation 2-->
   <nav class="wrapper-nav text-center">
       <ul class="nav-two">
-        <li class="welcome">
-          <a href="welcome.html">
-            <span class="nav-item"><span class="nav-text">Welcome</span></span>
-          </a>
+        <li class="welcome-link">
+          <a href="#"><span class="nav-item"><span class="nav-text"> Welcome</a>
         </li>
         <li class="growing">
           <a class="test" href="growing-economy.html">
@@ -62,6 +65,7 @@
             <ul class="sub-nav">
               <li><a href="growing-economy.html#innovation-economy"> <span class="nav-item"><span class="nav-text">Innovation Economic Development</span></span></a></li>
               <li><a href="growing-economy.html#energy-petro-manu"> <span class="nav-item"><span class="nav-text">Energy-Related Manufacturing</span></span></a></li>
+                <li><a href="growing-economy.html#win"> <span class="nav-item"><span class="nav-text">A Big Win for the Region</span></span></a></li>
             </ul>
 
         </li>
@@ -77,94 +81,95 @@
             <li><a href="improving-competitiveness.html#business"> <span class="nav-item"><span class="nav-text">Business Competitiveness</span></span></a></li>
             <li><a href="improving-competitiveness.html#workforce"> <span class="nav-item"><span class="nav-text">Workforce & Education</span></span></a></li>
           </ul>
+        </li>
+        <li class="welcome">
+          <a href="measuring-region.html">
+            <span class="nav-item"><span class="nav-text">Measuring the Region</span></span>
+          </a>
+          <span class="caret"></span>
+          <ul class="sub-nav">
+            <li><a href="measuring-region.html#growth"> <span class="nav-item"><span class="nav-text">Growth</span></span></a></li>
+            <li><a href="measuring-region.html#opportunity"> <span class="nav-item"><span class="nav-text">Opportunity</span></span></a></li>
+            <li><a href="measuring-region.html#equity"> <span class="nav-item"><span class="nav-text">Equity</span></span></a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
 
     <!--feature image graphic -->
     <div class="feat-img">
-        <img src="dist/img/growingEconomyBanner.jpg" alt="Growing the Economy Feature Banner Image" />
+        <img src="dist/img/Subbanner_Welcome.jpg" alt="Welcome from our Leaders Feature Banner Image" />
     </div>
-    <main>
-      <div class="medium-margin-top text-center margin-bottom reveal">
+    <main class="medium-margin-bottom content">
+      <div class="text-center margin-bottom reveal load-hidden">
         <h1 class="text-upper margin-bottom">Welcome to the Allegheny Conference’s 2018 Annual Meeting Report</h1>
 
-        <p class="entry-content">By Bill Demchak & Stefani Pashman </p>
+      <!--  <p class="entry-content">By Bill Demchak & Stefani Pashman </p>-->
       </div><!--close of entry-content-->
 
       <!--graphic divider-->
       <img class="colored-divider" src="dist/img/coloredDivider.jpg" alt="graphic divider" />
 
-      <div class="margin-top margin-bottom">
-        <p>For nearly 75 years, the Pittsburgh region has collaborated on the work to improve this place we call home.</p>
-
-        <p>If everyone believes the press clippings we’ve received over the past year, we really don’t have anything to worry about as a region anymore.</p>
-
-        <p><a href="https://www.forbes.com/sites/rogersands/2018/10/08/the-contagious-charm-of-pittsburgh/#75afcee14a96" target="_blank">We’ve made it</a>. </p>
-
-        <p><a href="https://www.msn.com/en-us/money/realestate/this-is-the-most-livable-city-in-america/ar-BBLXzsX?ocid=st" target="_blank">We’re a global darling</a>. </p>
-
-        <p><a href="https://venturebeat.com/2017/12/27/4-u-s-tech-hubs-to-watch-in-2018/" target="_blank">What more do we need to do for the future</a>?</p>
-
-        <p>In reality, the answer is “a lot.” We have a lot to be concerned about and a lot more we need to do in our region.</p>
-
-        <p>Here’s what we need to realize: We can’t believe the press clippings, the impressions, nor the instant satisfaction on social media of the latest headline or award or list. </p>
-
-        <p>It’s great PR for the region – and we should certainly feel proud and permitted to tout Pittsburgh as one of the best in the world – but by all means we cannot be complacent and call ourselves a success just yet. </p>
-
-        <p>This may seem contradictory. How can we be proud of a place that has a lot of work to do? The answer is because not everyone or every place in Pittsburgh has achieved a better life. We have a standard of excellence here in the region, and everyone has a right to experience it. Even with tangible success in some places and in some sectors, we need to reach further because somewhere in the 10-counties of our region we haven’t done enough.</p>
-
-        <p>This past year was the first year of our <a href="https://www.alleghenyconference.org/our-work/" target="_blank">2018-19 Agenda: Creating a Next Generation Economy for All</a>. We laid the foundation for improving economic inclusion, for marketing our region as a place for top talent and innovative companies to thrive, and for measuring the progress of our region. We helped a number of critical pieces of legislation progress and pass through the state legislature that will improve business for manufacturers and remove barriers for parts of our population that haven’t had the opportunity for economic mobility.</p>
-
-        <p>We set the scene for 2019 and beyond. In the coming months, we aim to move swiftly on competitiveness issues we’ve long seen as a detriment to the Pittsburgh region, like tax reform, infrastructure and sustainability. We’re aiming to connect the region’s next generation of leaders to engage with us on an initiative to prepare the region for when they assume leadership. Through the leadership of the region, we’re fortunate to have a path to follow to improve. Let’s do the same for tomorrow’s leadership.</p>
-
-        <p>One thing we benefit from in Pittsburgh is a high standard of work ethic, collaboration and empathy to move ahead together. We will undoubtedly witness more rankings and headlines, but if we keep our standard of excellence in mind we will never be complacent, and we’ll always seek ways to work together to meet and exceed our standards.
+      <p class="medium-margin-top">The Pittsburgh region is known as a place for collaborators. This fall has been a challenging time in the Pittsburgh region, especially over the past several weeks. During this time, our region’s people have shown a common interest of supporting and welcoming one another. That's what the Pittsburgh region is: the home to people who embody compassion, share strength and build together. Perhaps Pittsburgh’s people have embraced these characteristics throughout the region’s entire history and not only for the past century, when this collaboration has been well documented. Regardless, that Pittsburgh spirit extends throughout southwestern Pennsylvania and unites us. I believe it will continue carrying us into the future as we seek to improve our region as a place for all to thrive.</p>
+      <p>The Allegheny Conference held its Annual Meeting on November 8th at the Carnegie Music Hall in Oakland. Seeing the great turnout was heartwarming and inspiring, and we appreciate your support. If you couldn’t make it, <a href="https://www.flickr.com/photos/imaginepittsburgh/albums/72157700276726102" target="_blank">please enjoy this gallery of photos from the evening</a>. I also encourage you to read the opening remarks from Bill Demchak, Allegheny Conference Chair and Chairman, President and CEO of the PNC Financial Services Group, Inc. <a href="https://www.alleghenyconference.org/wp-content/uploads/2018/11/BDemchak2018ACCD_AM_OpenRemarks.pdf" target="_blank">Click here to read his remarks</a> on the need to come together in unity as the Pittsburgh region.</p>
+      <p>In these final weeks of 2018, the Conference will continue the work of our 2018-2019 Agenda. As we look further ahead, next year promises to present numerous opportunities for investor and community engagement, including activities to commemorate the 75th anniversary of Pittsburgh’s first great renaissance by making 2019 a year of civic leadership between today’s and tomorrow’s leaders. We will also begin planning for our next agenda, which will begin in 2020.</p>
+      <p>This report highlights progress being made against the Allegheny Conference’s 2018-19 Agenda – Creating a Next Generation Economy for All, including some of the ways we are working, in partnership with the region’s public, private and non-profit sectors, to make our region a better place for the companies who invest here and the people who live here.</p>
+      <p>On behalf of the Allegheny Conference on Community Development, I thank you for your dedication to the Pittsburgh region.</p>
+      <p>Sincerely,</p>
+      <img src="dist/img/SPashmanSignature.jpg" alt="Stefani Pashman's signature" style="max-width:275px;" />
+      <p><strong>Stefani Pashman</strong><br/>
+        CEO, Allegheny Conference
         </p>
 
-        <p><strong>Sincerely,</strong></p>
-
-        <!--both signatures go here side by side -->
-        <div class="flex-signatures">
-          <div class="demchak">
-            <img src="dist/img/SPashmanSignature.jpg" alt="Stefani Pashman's signature" />
-            <p>William S. Demchak<br/>
-              Chairman, Allegheny Conference<br/>
-              PNC title</p>
-          </div>
-          <div class="pashman">
-            <img src="dist/img/SPashmanSignature.jpg" alt="Stefani Pashman's signature" />
-            <p>Stefani Pashman<br/>
-              CEO, Allegheny Conference
-              </p>
-          </div>
-        </div>
-
-        </div>
-      <hr>
+        <!--sponsor ad PNC -->
+        <p style="text-align:center;"><small>Sponsor Ad</small></p>
+        <img src="dist/img/sponsor_pnc.jpg" alt="PNC Sponsor Ad" class="sponsor-ad"/>
+      <hr class="margin-top">
       <h2 class="text-center margin-top margin-bottom">2018 Allegheny Conference Leadership + Staff</h2>
         <p class="text-center"><a href="https://www.alleghenyconference.org/about/our-leadership/" target="_blank">View Current Conference's Leadership</a></p>
-        <p class="text-center"><a href="https://www.alleghenyconference.org/about/our-team/" target="_blank">View Current Conference's Staff</a></p>
+        <p class="text-center margin-bottom"><a href="https://www.alleghenyconference.org/about/our-team/" target="_blank">View Current Conference's Staff</a></p>
 
       <hr>
 
       <h2 class="text-center margin-top margin-bottom">Regional Investors & Board Members</h2>
-      <div >
+      <div class="margin-bottom">
         <p class="text-center"><a href="https://www.alleghenyconference.org/wp-content/uploads/2016/08/ACCD_RIC_List.pdf" target="_blank">Regional Investors Council</a></p>
         <p class="text-center"><a href="https://www.alleghenyconference.org/wp-content/uploads/2016/08/ACCD_BoardList.pdf" target="_blank">Allegheny Conference on Community Development</a></p>
         <p class="text-center"><a href="https://www.alleghenyconference.org/wp-content/uploads/2016/08/GPCC_BoardList.pdf" target="_blank">Greater Pittsburgh Chamber of Commerce</a></p>
         <p class="text-center"><a href="https://www.alleghenyconference.org/wp-content/uploads/2016/08/PRA_BoardList.pdf" target="_blank">Pittsburgh Regional Alliance</a></p>
         <p class="text-center"><a href="https://www.alleghenyconference.org/wp-content/uploads/2016/08/PELGP_BoardList.pdf" target="_blank">Pennsylvania Economy League of Greater Pittsburgh</a></p>
       </div>
+
+      <hr>
+      <p class="text-center"><small>Sponsored by:</small></p>
+      <img src="dist/img/Sponsors_AM2018.jpg" alt="Sponsors" class="sponsor-ad"/>
     </main>
 
     <!--footer-->
     <footer>
       <!--footer logo in white -->
-      <img class="footer-logo" src="dist/img/New_ACCDlogo_white.svg" alt="Allegheny Conference on Community Development white logo"/>
-      <div class="flex-wrapper">
+      <div>
+      <a href="https://www.alleghenyconference.org/" target="_blank">  <img class="footer-logo" src="dist/img/New_ACCDlogo_white.svg" alt="Allegheny Conference on Community Development white logo"/></a>
+      </div>
         <a href="https://www.greaterpittsburghchamberofcommerce.com/" target="_blank">Greater Pittsburgh Chamber of Commerce</a>
         <a href="https://www.pelgp.org/" target="_blank">Pennsylvania Economy League of Greater Pittsburgh</a>
         <a href="https://www.pittsburghregion.org/" target="_blank">Pittsburgh Regional Alliance</a>
-      </div>
+
     </footer>
-    <script src="dist/js/script.js"> </script>
+    <script>
+      //Scroll Reveal Code
+      ScrollReveal({ distance: '20px' }).reveal('.reveal', { delay: 200 , origin: 'bottom', easing: 'cubic-bezier(0.42, 0, 0.61, 1.19)'});
+
+      ScrollReveal().reveal('.icon', { interval: 300 , delay: 400,  scale: 0.85 , easing: 'cubic-bezier(0.42, 0, 0.61, 1.19)'});
+
+      ScrollReveal().reveal('.left-reveal', { delay: 400,  origin: 'left',  easing: 'cubic-bezier(0.42, 0, 0.61, 1.19)'});
+      ScrollReveal().reveal('.right-reveal', { delay: 400,  origin: 'right',  easing: 'cubic-bezier(0.42, 0, 0.61, 1.19)'});
+
+      loadMore('.icon').then(function() {
+        ScrollReveal().sync();
+      });
+    </script>
+    <script async src="dist/js/script.js"> </script>
+    <script async src="dist/js/sizescript.js"> </script>
   </body>
 </html>
